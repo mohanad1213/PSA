@@ -29,7 +29,7 @@ namespace OnionAPI.Presentation
 
             // Repo DI
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
-            builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+            builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
             #endregion
 
             //  Global Exception Handler
