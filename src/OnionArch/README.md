@@ -75,7 +75,7 @@
 
 ### Responsibilities
 
-- Implements data access, external API integrations, logging, or email sending.
+- Exposes APIs or UI for external consumption.
 - Depends on Application to fetch or send data to and from the system.
 - Does not contain business logic.
 
