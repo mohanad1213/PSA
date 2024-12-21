@@ -6,5 +6,6 @@ namespace OnionAPI.Application.Abstractions.ServicesContract
     {
         public Product GetProductDetails(int productId);
         public List<Product> GetProducts();
+        public Product Add(Product product);
     }
 }

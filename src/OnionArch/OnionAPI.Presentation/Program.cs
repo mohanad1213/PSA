@@ -28,8 +28,6 @@ namespace OnionAPI.Presentation
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             #endregion
 
-
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

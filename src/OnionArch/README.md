@@ -2,6 +2,10 @@
 
 ![Alt text](./Overview.png);
 
+## Using DI to bridge between layers
+
+![OnionAPI.Presentation.Program](./DI.png);
+
 ## 1) OnionAPI.Domain
 
 ### Purpose:

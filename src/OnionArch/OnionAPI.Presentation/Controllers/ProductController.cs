@@ -11,7 +11,7 @@ namespace OnionAPI.Presentation.Controllers
     {
         #region Private && Constructor
         private readonly ILogger<ProductController> _logger;
-        private readonly ProductService _productService;
+        private readonly IProductService _productService;
 
         public ProductController(
             ILogger<ProductController> logger,
@@ -19,6 +19,7 @@ namespace OnionAPI.Presentation.Controllers
             )
         {
             _logger = logger;
+            _productService = productService;
         }
         #endregion
 
