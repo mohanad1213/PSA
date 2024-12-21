@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace OnionAPI.Application.Services
 {
 
-
     internal class LowCostProductService : IProductService
     {
         // this service can Insert only product price 10.00 USD
@@ -23,7 +22,7 @@ namespace OnionAPI.Application.Services
         }
         public Product Add(Product product)
         {
-            // this service can Insert only product price 10.00 USD
+            // this service can Insert only product price equal or less than 10.00 USD 
             if (product.Price > 10.00m)
                 throw new Exception("Low Cost Proudct price can't be more than 10.00 USD");
             else
