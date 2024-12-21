@@ -2,6 +2,7 @@ using OnionAPI.Application.Abstractions.ServicesContract;
 using OnionAPI.Application.Services;
 using OnionAPI.Domain.Entities;
 using OnionAPI.Domain.RepositoriesContract;
+using OnionAPI.Infrastructure.Middlewares;
 using OnionAPI.Infrastructure.Repositories;
 
 namespace OnionAPI.Presentation
@@ -27,6 +28,9 @@ namespace OnionAPI.Presentation
             // Repo DI
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             #endregion
+
+            //  Global Exception Handler
+            builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
             var app = builder.Build();
 

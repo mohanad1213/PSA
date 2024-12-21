@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using OnionAPI.Application.Abstractions.ServicesContract;
 
 namespace OnionAPI.Presentation.Controllers
 {
@@ -9,10 +10,15 @@ namespace OnionAPI.Presentation.Controllers
     {
         #region Private && Constructor
         private readonly ILogger<AuthController> _logger;
+        private readonly IAuthService _authService;
 
-        public AuthController(ILogger<AuthController> logger)
+        public AuthController(
+            ILogger<AuthController> logger,
+            IAuthService authService
+            )
         {
             _logger = logger;
+            _authService = authService;
         }
         #endregion
 
@@ -24,6 +30,7 @@ namespace OnionAPI.Presentation.Controllers
         [HttpPost(Name = "Login")]
         public IActionResult Login(LoginRequest loginRequest)
         {
+            this._authService.Login();
             return Ok();
         }
 

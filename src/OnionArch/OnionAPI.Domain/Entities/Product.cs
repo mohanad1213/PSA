@@ -3,8 +3,10 @@
     public class Product
     {
 
-        public Product(string name, decimal price)
+        public Product(int id,string name, decimal price)
         {
+            // TODO: remove ID mapping id should be be param, should come from DB
+            this.Id = id;
             this.Name = name;
             this.Price = price;
         }
@@ -20,7 +22,10 @@
             get
             { return id; }
             set
-            { this.id = value; }
+            {
+                if(value <= 0)
+                    throw new Exception("ID can't be 0 or less than 0");
+                this.id = value; }
         }
 
 

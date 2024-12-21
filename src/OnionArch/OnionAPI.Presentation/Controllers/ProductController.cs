@@ -50,12 +50,13 @@ namespace OnionAPI.Presentation.Controllers
         public IActionResult Post(AddProductRequest addProductRequest)
         {
             // Model Mapping
-            Product product = new Product(addProductRequest.Name, addProductRequest.Price);
+            // TODO: Use proper mapper 
+
+            Product product = new Product(1111,addProductRequest.Name, addProductRequest.Price);
             _productService.Add(product);
             return Ok(product);
 
         }
-
 
         /// <summary>
         /// API: GET Product

@@ -2,9 +2,11 @@
 using OnionAPI.Domain.RepositoriesContract;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace OnionAPI.Infrastructure.Repositories
 {
@@ -12,8 +14,8 @@ namespace OnionAPI.Infrastructure.Repositories
     {
         private readonly List<Product> _products = new List<Product>
         {
-            new Product { Id = 1, Name = "Laptop", Price = 1000M },
-            new Product { Id = 2, Name = "Smartphone", Price = 500M }
+            new Product( id:1, name:"Laptop", price:1000M),
+            new Product(id: 2, name:"Smartphone", price:500M )
         };
 
         public Product GetProductById(int id)
