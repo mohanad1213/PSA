@@ -24,9 +24,12 @@ namespace OnionAPI.Presentation
             #region Dependency Injection
             // Application Layer DI
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
 
             // Repo DI
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IInvoiceService, InvoiceService>();
             #endregion
 
             //  Global Exception Handler

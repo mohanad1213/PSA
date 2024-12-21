@@ -2,7 +2,6 @@
 {
     public class Product
     {
-
         public Product(int id,string name, decimal price)
         {
             // TODO: remove ID mapping id should be be param, should come from DB
@@ -28,7 +27,6 @@
                 this.id = value; }
         }
 
-
         public string Name
         {
             get
@@ -41,7 +39,6 @@
                     this.name = value;
             }
         }
-
 
         public decimal Price
         {

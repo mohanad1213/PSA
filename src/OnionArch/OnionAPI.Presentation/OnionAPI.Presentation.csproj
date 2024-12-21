@@ -18,8 +18,4 @@
     <ProjectReference Include="..\OnionAPI.Infrastructure\OnionAPI.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>
