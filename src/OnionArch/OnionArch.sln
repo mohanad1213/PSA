@@ -5,6 +5,14 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Presentation", "OnionAPI.Presentation\OnionAPI.Presentation.csproj", "{B255E37E-4498-4477-AC70-18DB2EEF26E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Infrastructure", "OnionAPI.Infrastructure\OnionAPI.Infrastructure.csproj", "{D24A5B7C-BEF7-4FBF-A3A9-4984907D7B75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Application", "OnionAPI.Application\OnionAPI.Application.csproj", "{5E8B8B55-2FF3-44B4-AB9A-4AB624A83BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Domain", "OnionAPI.Domain\OnionAPI.Domain.csproj", "{FB62DC0D-D26B-4A9D-B643-857398CA69F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Application.Abstractions", "OnionAPI.Application.Abstractions\OnionAPI.Application.Abstractions.csproj", "{01D86A2E-8C45-4430-948F-4CD457129C41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{B255E37E-4498-4477-AC70-18DB2EEF26E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B255E37E-4498-4477-AC70-18DB2EEF26E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B255E37E-4498-4477-AC70-18DB2EEF26E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24A5B7C-BEF7-4FBF-A3A9-4984907D7B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24A5B7C-BEF7-4FBF-A3A9-4984907D7B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24A5B7C-BEF7-4FBF-A3A9-4984907D7B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24A5B7C-BEF7-4FBF-A3A9-4984907D7B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8B8B55-2FF3-44B4-AB9A-4AB624A83BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8B8B55-2FF3-44B4-AB9A-4AB624A83BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8B8B55-2FF3-44B4-AB9A-4AB624A83BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8B8B55-2FF3-44B4-AB9A-4AB624A83BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB62DC0D-D26B-4A9D-B643-857398CA69F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB62DC0D-D26B-4A9D-B643-857398CA69F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB62DC0D-D26B-4A9D-B643-857398CA69F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB62DC0D-D26B-4A9D-B643-857398CA69F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D86A2E-8C45-4430-948F-4CD457129C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D86A2E-8C45-4430-948F-4CD457129C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D86A2E-8C45-4430-948F-4CD457129C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D86A2E-8C45-4430-948F-4CD457129C41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

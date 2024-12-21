@@ -7,13 +7,16 @@ namespace OnionAPI.Presentation.Controllers
     [Route("[controller]/[action]")]
     public class AuthController : ControllerBase
     {
+        #region Private && Constructor
         private readonly ILogger<AuthController> _logger;
 
         public AuthController(ILogger<AuthController> logger)
         {
             _logger = logger;
         }
+        #endregion
 
+        #region End-Points
         /// <summary>
         /// API: POST Auth/Login
         /// </summary>
@@ -33,5 +36,6 @@ namespace OnionAPI.Presentation.Controllers
         {
             return Ok();
         }
+        #endregion
     }
 }
