@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnionAPI.Application.Abstractions\OnionAPI.Application.Abstractions.csproj" />
     <ProjectReference Include="..\OnionAPI.Domain\OnionAPI.Domain.csproj" />
   </ItemGroup>
 

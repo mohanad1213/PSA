@@ -21,6 +21,8 @@ namespace OnionAPI.Application.Services
 
         public Product GetProductDetails(int productId)
         {
+            if (productId <= 0)
+                throw new Exception("product is is wrong");
             return _productRepository.GetProductById(productId);
         }
 

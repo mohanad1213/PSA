@@ -11,6 +11,6 @@ namespace OnionAPI.Domain.RepositoriesContract
     {
         Invoice GetById(int id);
         List<Invoice> GetAll();
-        Invoice Insert(Invoice product);
+        Invoice Insert(Invoice invoice);
     }
 }
