@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using OnionAPI.Application.Abstractions.ServicesContract;
 using OnionAPI.Application.Services;
+using OnionAPI.Domain.Entities;
+using OnionAPI.Presentation.RequestModel;
 
 namespace OnionAPI.Presentation.Controllers
 {
@@ -39,6 +41,23 @@ namespace OnionAPI.Presentation.Controllers
             return Ok(product);
 
         }
+
+        /// <summary>
+        /// API: Post Product
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost()]
+        public IActionResult Post(AddProductRequest addProductRequest)
+        {
+            // Model Mapping
+            Product product = new Product(addProductRequest.Name, addProductRequest.Price);
+           
+
+            _productService.Add(product);
+            return Ok(product);
+
+        }
+
 
         /// <summary>
         /// API: GET Product

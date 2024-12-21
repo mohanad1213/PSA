@@ -11,5 +11,6 @@ namespace OnionAPI.Domain.RepositoriesContract
     {
         Product GetProductById(int id);
         List<Product> GetProducts();
+        Product Insert(Product product);
     }
 }

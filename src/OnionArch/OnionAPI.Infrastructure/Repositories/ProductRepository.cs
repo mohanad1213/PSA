@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnionAPI.Infrastructure.Repositories
 {
-    public class ProductRepository: IProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly List<Product> _products = new List<Product>
         {
@@ -24,6 +24,12 @@ namespace OnionAPI.Infrastructure.Repositories
         public List<Product> GetProducts()
         {
             return _products;
+        }
+
+        public Product Insert(Product product)
+        {
+            _products.Add(product);
+            return product;
         }
     }
 }

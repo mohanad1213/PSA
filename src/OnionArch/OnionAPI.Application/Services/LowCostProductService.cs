@@ -1,22 +1,32 @@
 ﻿using OnionAPI.Application.Abstractions.ServicesContract;
 using OnionAPI.Domain.Entities;
 using OnionAPI.Domain.RepositoriesContract;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace OnionAPI.Application.Services
 {
-    public class ProductService : IProductService
+
+
+    internal class LowCostProductService : IProductService
     {
+        // this service can Insert only product price 10.00 USD
+
         private readonly IProductRepository _productRepository;
 
-        public ProductService(IProductRepository productRepository)
+        public LowCostProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
-
         public Product Add(Product product)
         {
-            return this._productRepository.Insert(product);
-
+            if (product.Price > 10.00)
+                throw new Exception("Low Cost Proudct price can't be more than 10.00 USD");
+            else
+                return this._productRepository.Insert(product);
         }
 
         public Product GetProductDetails(int productId)
