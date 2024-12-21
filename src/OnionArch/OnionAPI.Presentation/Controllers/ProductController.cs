@@ -51,8 +51,6 @@ namespace OnionAPI.Presentation.Controllers
         {
             // Model Mapping
             Product product = new Product(addProductRequest.Name, addProductRequest.Price);
-           
-
             _productService.Add(product);
             return Ok(product);
 

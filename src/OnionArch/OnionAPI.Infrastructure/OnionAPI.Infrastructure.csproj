@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
   <ItemGroup>

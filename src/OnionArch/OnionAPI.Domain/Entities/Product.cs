@@ -2,9 +2,11 @@
 {
     public class Product
     {
-        Product(string name, decimal price)
-        {
 
+        public Product(string name, decimal price)
+        {
+            this.Name = name;
+            this.Price = price;
         }
 
         private int id;
@@ -27,7 +29,12 @@
             get
             { return name; }
             set
-            { this.name = value; }
+            {
+                if (value.Length > 20)
+                    throw new Exception("Product Name can't be more than 20 chars");
+                else
+                    this.name = value;
+            }
         }
 
 

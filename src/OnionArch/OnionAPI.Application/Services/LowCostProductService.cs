@@ -23,7 +23,8 @@ namespace OnionAPI.Application.Services
         }
         public Product Add(Product product)
         {
-            if (product.Price > 10.00)
+            // this service can Insert only product price 10.00 USD
+            if (product.Price > 10.00m)
                 throw new Exception("Low Cost Proudct price can't be more than 10.00 USD");
             else
                 return this._productRepository.Insert(product);
