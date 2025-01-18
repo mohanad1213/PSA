@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DoctorAppointmentManagement.API": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

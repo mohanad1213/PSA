@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolithDoctor.Startup", "ModularMonolithDoctor.Startup\ModularMonolithDoctor.Startup.csproj", "{0D74BD3D-C662-4686-AE76-5FBC0F281FB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoctorAvailability", "DoctorAvailability", "{6A145B6C-DA10-419D-B921-33D3E8E03AEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentBooking", "AppointmentBooking", "{34073943-CCFE-4F81-9AD3-D06612802B52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentConfirmation", "AppointmentConfirmation", "{873C9D3B-DF45-4127-89D9-3B636F451375}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoctorAppointmentManagement", "DoctorAppointmentManagement", "{4389CEF8-E8B5-4A6B-83F8-2C6FE16371E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAvailability.API", "Modules\DoctorAvailability\DoctorAvailability.API\DoctorAvailability.API.csproj", "{957968B8-D0E1-4A68-BB74-40463C23F6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.API", "Modules\DoctorAppointmentManagement\DoctorAppointmentManagement.API\DoctorAppointmentManagement.API.csproj", "{B779695C-FA0E-4E2E-8147-19A0985D77AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentBooking.API", "Modules\AppointmentBooking\AppointmentBooking.API\AppointmentBooking.API.csproj", "{727E545B-1DB8-4908-A6F5-180D912BAE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentConfirmation.API", "Modules\AppointmentConfirmation\AppointmentConfirmation.API\AppointmentConfirmation.API.csproj", "{481A7202-4106-4421-98C9-97D1F9891597}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D74BD3D-C662-4686-AE76-5FBC0F281FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D74BD3D-C662-4686-AE76-5FBC0F281FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D74BD3D-C662-4686-AE76-5FBC0F281FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D74BD3D-C662-4686-AE76-5FBC0F281FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957968B8-D0E1-4A68-BB74-40463C23F6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957968B8-D0E1-4A68-BB74-40463C23F6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957968B8-D0E1-4A68-BB74-40463C23F6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957968B8-D0E1-4A68-BB74-40463C23F6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B779695C-FA0E-4E2E-8147-19A0985D77AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B779695C-FA0E-4E2E-8147-19A0985D77AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B779695C-FA0E-4E2E-8147-19A0985D77AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B779695C-FA0E-4E2E-8147-19A0985D77AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{727E545B-1DB8-4908-A6F5-180D912BAE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727E545B-1DB8-4908-A6F5-180D912BAE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727E545B-1DB8-4908-A6F5-180D912BAE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727E545B-1DB8-4908-A6F5-180D912BAE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481A7202-4106-4421-98C9-97D1F9891597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481A7202-4106-4421-98C9-97D1F9891597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481A7202-4106-4421-98C9-97D1F9891597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481A7202-4106-4421-98C9-97D1F9891597}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A145B6C-DA10-419D-B921-33D3E8E03AEF} = {22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}
+		{34073943-CCFE-4F81-9AD3-D06612802B52} = {22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}
+		{873C9D3B-DF45-4127-89D9-3B636F451375} = {22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}
+		{4389CEF8-E8B5-4A6B-83F8-2C6FE16371E4} = {22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}
+		{957968B8-D0E1-4A68-BB74-40463C23F6CF} = {6A145B6C-DA10-419D-B921-33D3E8E03AEF}
+		{B779695C-FA0E-4E2E-8147-19A0985D77AA} = {4389CEF8-E8B5-4A6B-83F8-2C6FE16371E4}
+		{727E545B-1DB8-4908-A6F5-180D912BAE19} = {34073943-CCFE-4F81-9AD3-D06612802B52}
+		{481A7202-4106-4421-98C9-97D1F9891597} = {873C9D3B-DF45-4127-89D9-3B636F451375}
+	EndGlobalSection
+EndGlobal
