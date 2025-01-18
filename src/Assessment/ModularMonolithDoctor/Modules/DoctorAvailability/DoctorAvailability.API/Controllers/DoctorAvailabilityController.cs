@@ -1,3 +1,6 @@
+using AutoMapper;
+using DoctorAvailability.Business;
+using DoctorAvailability.Business.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -15,8 +18,23 @@ namespace DoctorAvailability.API.Controllers
         }
 
         [HttpGet()]
-        public IActionResult Get()
+        public ActionResult<List<TimeSlotModel>> Get()
         {
+            DoctorAvailabilityBusiness doctorAvailabilityBusiness = new DoctorAvailabilityBusiness();
+            var doctorTimeSlotList = doctorAvailabilityBusiness.GetMyTimeSlots();
+
+
+
+
+            return Ok(doctorTimeSlotList);
+        }
+
+
+        [HttpPost()]
+        public ActionResult Post()
+        {
+            DoctorAvailabilityBusiness doctorAvailabilityBusiness = new DoctorAvailabilityBusiness();
+
             return Ok();
         }
     }
