@@ -1,3 +1,5 @@
+using Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace ModularMonolithDoctor.Startup
 {
@@ -8,6 +10,8 @@ namespace ModularMonolithDoctor.Startup
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDbContext<DocktorDbContext>(options =>
+                options.UseInMemoryDatabase("InMemoryDb"));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -18,8 +22,6 @@ namespace ModularMonolithDoctor.Startup
             builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentConfirmation.API.AssemblyReference).Assembly);
             builder.Services.AddControllers().AddApplicationPart(typeof(DoctorAppointmentManagement.API.AssemblyReference).Assembly);
             builder.Services.AddControllers().AddApplicationPart(typeof(DoctorAvailability.API.AssemblyReference).Assembly);
-
-
 
             var app = builder.Build();
 
@@ -34,10 +36,11 @@ namespace ModularMonolithDoctor.Startup
 
             app.UseAuthorization();
 
-
             app.MapControllers();
 
             app.Run();
         }
     }
+
+
 }
