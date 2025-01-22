@@ -5,11 +5,11 @@ namespace AppointmentBooking.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AppointmentBookingController : ControllerBase
+    public class SlotsController : ControllerBase
     {
-        private readonly ILogger<AppointmentBookingController> _logger;
+        private readonly ILogger<SlotsController> _logger;
 
-        public AppointmentBookingController(ILogger<AppointmentBookingController> logger)
+        public SlotsController(ILogger<SlotsController> logger)
         {
             _logger = logger;
         }

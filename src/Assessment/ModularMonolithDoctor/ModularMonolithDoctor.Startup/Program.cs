@@ -1,4 +1,5 @@
 using Database;
+using DoctorAppointmentManagement.API.Core.Application;
 using DoctorAvailability.Business;
 using DoctorAvailability.Business.Abstraction;
 using DoctorAvailability.Data;
@@ -31,9 +32,14 @@ namespace ModularMonolithDoctor.Startup
 
             builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentBooking.API.AssemblyReference).Assembly);
             builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentConfirmation.API.AssemblyReference).Assembly);
+
+            #region Moudle 1: Doctor Availability Module
             builder.Services.AddControllers().AddApplicationPart(typeof(DoctorAppointmentManagement.API.AssemblyReference).Assembly);
 
-       
+            builder.Services.AddScoped<SlotService>();
+            builder.Services.AddScoped<AppointmentService>();
+            #endregion
+
 
             var app = builder.Build();
 

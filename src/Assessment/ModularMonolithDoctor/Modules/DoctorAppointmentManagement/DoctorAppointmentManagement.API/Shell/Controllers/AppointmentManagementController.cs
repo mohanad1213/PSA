@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace DoctorAppointmentManagement.API.Controllers
+namespace DoctorAppointmentManagement.API.Shell.Controllers
 {
     [ApiController]
     [Route("[controller]")]
