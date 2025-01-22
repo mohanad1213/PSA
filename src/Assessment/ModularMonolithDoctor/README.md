@@ -31,8 +31,9 @@ Shared project any module can access
 --
 Folder structure 
 
+ ```bash
 ├── 📦ModularMonolithDoctor Start up                  
     ├── 📂DoctorAvailability Module (Layered Architecture)
     ├── 📂Doctor Appointment Management Module (Hexagonal Architecture)
     └── README.md
-
+``` 
