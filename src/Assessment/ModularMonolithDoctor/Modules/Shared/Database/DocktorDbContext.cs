@@ -1,5 +1,6 @@
 ﻿using Database.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace Database
 {
@@ -12,8 +13,13 @@ namespace Database
             this.SaveChanges();
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseInMemoryDatabase(databaseName: "InMemoryDb");
+        }
+
         // Define DbSets for your entities
-        public DbSet<TimeSlot> timeSlots { get; set; }
+        public virtual DbSet<TimeSlot> timeSlots { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

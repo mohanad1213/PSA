@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Modules\Shared\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAvailability.Business", "Modules\DoctorAvailability\DoctorAvailability.Business\DoctorAvailability.Business.csproj", "{62034660-9442-4B1B-93D4-D874240F2060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAvailability.Data", "DoctorAvailability.Data\DoctorAvailability.Data.csproj", "{2276E35C-98FD-4889-8A48-A76E5F9FBD1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAvailability.Data", "Modules\DoctorAvailability\DoctorAvailability.Data\DoctorAvailability.Data.csproj", "{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{62034660-9442-4B1B-93D4-D874240F2060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62034660-9442-4B1B-93D4-D874240F2060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62034660-9442-4B1B-93D4-D874240F2060}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2276E35C-98FD-4889-8A48-A76E5F9FBD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2276E35C-98FD-4889-8A48-A76E5F9FBD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2276E35C-98FD-4889-8A48-A76E5F9FBD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2276E35C-98FD-4889-8A48-A76E5F9FBD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +92,6 @@ Global
 		{6628687B-4906-42C6-B817-1B9ADDBB39FC} = {22DDC8AF-F5E4-4B24-97CD-4D8C622B04D5}
 		{C819A4B5-44CF-4C85-BB32-402DBB72DDDD} = {6628687B-4906-42C6-B817-1B9ADDBB39FC}
 		{62034660-9442-4B1B-93D4-D874240F2060} = {6A145B6C-DA10-419D-B921-33D3E8E03AEF}
-		{2276E35C-98FD-4889-8A48-A76E5F9FBD1D} = {6A145B6C-DA10-419D-B921-33D3E8E03AEF}
+		{A0741FA4-0D1F-4B3C-BCCB-1CCA3CF31598} = {6A145B6C-DA10-419D-B921-33D3E8E03AEF}
 	EndGlobalSection
 EndGlobal

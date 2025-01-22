@@ -1,6 +1,7 @@
 using AutoMapper;
 using Database;
 using DoctorAvailability.Business;
+using DoctorAvailability.Business.Abstraction;
 using DoctorAvailability.Business.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,22 +13,21 @@ namespace DoctorAvailability.API.Controllers
     public class DoctorAvailabilityController : ControllerBase
     {
         private readonly ILogger<DoctorAvailabilityController> _logger;
-        private readonly DocktorDbContext _appDbContext;
-        private readonly DoctorAvailabilityBusiness doctorAvailabilityBusiness;
+        private readonly IDoctorAvailabilityBusiness _doctorAvailabilityBusiness;
 
         public DoctorAvailabilityController(
-            DocktorDbContext appContext,
+            IDoctorAvailabilityBusiness doctorAvailabilityBusiness,
             ILogger<DoctorAvailabilityController> logger
             )
         {
             _logger = logger;
-            this.doctorAvailabilityBusiness = new DoctorAvailabilityBusiness(appContext);
+            this._doctorAvailabilityBusiness = doctorAvailabilityBusiness;
         }
 
         [HttpGet()]
         public ActionResult<List<TimeSlotDto>> Get()
         {
-            var doctorTimeSlotList = doctorAvailabilityBusiness.GetMyTimeSlots();
+            var doctorTimeSlotList = _doctorAvailabilityBusiness.GetMyTimeSlots();
 
             return Ok(doctorTimeSlotList);
         }

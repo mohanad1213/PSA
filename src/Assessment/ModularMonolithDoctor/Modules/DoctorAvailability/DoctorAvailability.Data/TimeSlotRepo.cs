@@ -1,9 +1,10 @@
 ﻿using Database;
 using Database.Models;
+using DoctorAvailability.Data.Abstraction;
 
 namespace DoctorAvailability.Data
 {
-    public class TimeSlotRepo
+    public class TimeSlotRepo : ITimeSlotRepo
     {
         private readonly DocktorDbContext _appDbContext;
         public TimeSlotRepo(DocktorDbContext appContext)

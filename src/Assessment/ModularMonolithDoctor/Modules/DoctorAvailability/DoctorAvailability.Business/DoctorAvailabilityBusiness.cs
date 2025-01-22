@@ -1,15 +1,17 @@
 ﻿using Database;
+using DoctorAvailability.Business.Abstraction;
 using DoctorAvailability.Business.Dtos;
 using DoctorAvailability.Data;
+using DoctorAvailability.Data.Abstraction;
 
 namespace DoctorAvailability.Business
 {
-    public class DoctorAvailabilityBusiness
+    public class DoctorAvailabilityBusiness : IDoctorAvailabilityBusiness
     {
-        private readonly TimeSlotRepo _timeSlotRepo;
-        public DoctorAvailabilityBusiness(DocktorDbContext appContext)
+        private readonly ITimeSlotRepo _timeSlotRepo;
+        public DoctorAvailabilityBusiness(ITimeSlotRepo timeSlotRepo)
         {
-            _timeSlotRepo = new TimeSlotRepo(appContext);
+            _timeSlotRepo = timeSlotRepo;
         }
 
         public List<TimeSlotDto> GetMyTimeSlots()
