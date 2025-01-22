@@ -30,15 +30,9 @@ Shared project any module can access
 
 --
 Folder structure 
-...
-📦ModularMonolithDoctor
- ┣ 📂ModularMonolithDoctor Start up
- ┃ ┣ 📂DoctorAvailability Module (Layered Architecture)
- ┃ ┣ 📂Module 3
- ┃ ┣ 📂Module 4
- ┃ ┣ 📂Doctor Appointment Management Module (Hexagonal Architecture)
- ┃ ┃ ┃ ┗ 📂Core
- ┃ ┃ ┃ ┗ 📂Shell
-...
 
+├── 📦ModularMonolithDoctor Start up                  
+    ├── 📂DoctorAvailability Module (Layered Architecture)
+    ├── 📂Doctor Appointment Management Module (Hexagonal Architecture)
+    └── README.md
 
