@@ -8,6 +8,8 @@ Folder structure
     ├── 📂Module 2: 
     ├── 📂Module 3: 
     ├── 📂Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
+    ├── 📂Shared:
+        ├── 📂 Database
     └── README.md
 ``` 
 
