@@ -1,5 +1,17 @@
 ﻿# Modular Monolith
 
+Folder structure 
+
+ ```bash
+├── 📦ModularMonolithDoctor Start up                  
+    ├── 📂Module 1: DoctorAvailability Module (Layered Architecture)
+    ├── 📂Module 2: 
+    ├── 📂Module 3: 
+    ├── 📂Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
+    └── README.md
+``` 
+
+
 this project consist of 4 modules
 
 ## 0) ModularMonolithDoctor.Startup
@@ -29,11 +41,3 @@ we use DI here as part of ASP.NET MVC .NET 8 Framework
 Shared project any module can access
 
 --
-Folder structure 
-
- ```bash
-├── 📦ModularMonolithDoctor Start up                  
-    ├── 📂DoctorAvailability Module (Layered Architecture)
-    ├── 📂Doctor Appointment Management Module (Hexagonal Architecture)
-    └── README.md
-``` 
