@@ -1,6 +1,6 @@
-﻿namespace AppointmentBooking.Domain.Entities
+﻿namespace AppointmentBooking.Domain.Models
 {
-    public class BookingEntity
+    public class BookingModel
     {
         // Private fields
         private Guid id;
@@ -10,7 +10,7 @@
         private DateTime reservedAt;
 
         // Constructor for creating a reservation with all required fields
-        private BookingEntity(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
+        private BookingModel(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
         {
             if (id == Guid.Empty) throw new ArgumentException("Id must not be empty.", nameof(id));
             if (slotId == Guid.Empty) throw new ArgumentException("SlotId must not be empty.", nameof(slotId));
@@ -23,11 +23,12 @@
             this.patientId = patientId;
             this.patientName = patientName;
             this.reservedAt = reservedAt;
+        }
 
              // Factory method for creating a new reservation
-        public static BookingEntity Create(Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
+        public static BookingModel Create(Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
         {
-            return new BookingEntity(Guid.NewGuid(), slotId, patientId, patientName, reservedAt);
+            return new BookingModel(Guid.NewGuid(), slotId, patientId, patientName, reservedAt);
         }
     }
 

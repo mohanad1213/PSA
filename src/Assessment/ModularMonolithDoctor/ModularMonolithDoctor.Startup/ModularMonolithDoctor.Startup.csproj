@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\AppointmentBooking\AppointmentBooking.API\AppointmentBooking.API.csproj" />
+    <ProjectReference Include="..\Modules\AppointmentBooking\AppointmentBooking.Infrastructure\AppointmentBooking.Infrastructure.csproj" />
     <ProjectReference Include="..\Modules\AppointmentConfirmation\AppointmentConfirmation.API\AppointmentConfirmation.API.csproj" />
     <ProjectReference Include="..\Modules\DoctorAppointmentManagement\DoctorAppointmentManagement.API\DoctorAppointmentManagement.API.csproj" />
     <ProjectReference Include="..\Modules\DoctorAvailability\DoctorAvailability.API\DoctorAvailability.API.csproj" />

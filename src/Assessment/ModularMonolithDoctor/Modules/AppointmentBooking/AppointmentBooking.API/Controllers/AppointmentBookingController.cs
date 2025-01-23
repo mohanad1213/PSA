@@ -8,9 +8,11 @@ namespace AppointmentBooking.API.Controllers
     [Route("[controller]")]
     public class AppointmentBookingController : ControllerBase
     {
+        #region Private && Constructor 
         private readonly ILogger<AppointmentBookingController> _logger;
         private readonly IAppointmentBookingService _appointmentBookingService;
 
+        #region Constructor
         public AppointmentBookingController(
             IAppointmentBookingService appointmentBookingService,
             ILogger<AppointmentBookingController> logger
@@ -19,6 +21,7 @@ namespace AppointmentBooking.API.Controllers
             this._appointmentBookingService = appointmentBookingService;
             _logger = logger;
         }
+        #endregion
 
         [HttpPost()]
         public IActionResult Get()
