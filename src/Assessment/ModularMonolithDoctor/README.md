@@ -1,4 +1,4 @@
-﻿# Modular Monolith [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) 
+﻿# Modular Monolith [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) [![Domain][https://img.shields.io/badge/any_text-you_like-red)]
 
 Folder structure 
 
