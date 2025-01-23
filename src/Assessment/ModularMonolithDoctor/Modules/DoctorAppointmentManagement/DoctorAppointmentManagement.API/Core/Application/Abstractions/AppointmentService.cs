@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoctorAppointmentManagement.API.Core.Application.Abstractions
 {
-    internal interface IDoctorAppointmentManagementService
+    public interface IAppointmentService
     {
     }
 }

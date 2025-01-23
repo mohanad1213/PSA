@@ -3,13 +3,14 @@
 Folder structure 
 
  ```bash
-├── 📦ModularMonolithDoctor Start up                  
+├── 📦Modular Monolith Doctor Start up       
+├── 📦Modules                
     ├── 📂Module 1: DoctorAvailability Module (Layered Architecture)
-    ├── 📂Module 2: 
+    ├── 📂Module 2: Appointment Booking (Clean Architecture)
     ├── 📂Module 3: 
     ├── 📂Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
-    ├── 📂Shared:
-        ├── 📂 Database
+    ├── 📂Shared
+        ├── 📂 
     └── README.md
 ``` 
 

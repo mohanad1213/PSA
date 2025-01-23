@@ -1,3 +1,4 @@
+using DoctorAppointmentManagement.API.Core.Application.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -7,10 +8,19 @@ namespace DoctorAppointmentManagement.API.Shell.Controllers
     [Route("[controller]")]
     public class AppointmentManagementController : ControllerBase
     {
+        private readonly IAppointmentService _appointmentService;
+        private readonly ISlotService _slotService ;
         private readonly ILogger<AppointmentManagementController> _logger;
+     
 
-        public AppointmentManagementController(ILogger<AppointmentManagementController> logger)
+        public AppointmentManagementController(
+            IAppointmentService appointmentService,
+            ISlotService slotService,
+            ILogger<AppointmentManagementController> logger
+            )
         {
+            this._appointmentService = appointmentService;
+            this._slotService = slotService;
             _logger = logger;
         }
 
