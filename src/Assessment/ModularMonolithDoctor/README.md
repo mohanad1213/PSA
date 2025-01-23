@@ -7,15 +7,15 @@ Folder structure
 ├── 📦Modules                
     ├── 📂Module 1: DoctorAvailability Module (Layered Architecture)
     ├── 📂Module 2: Appointment Booking (Clean Architecture)
-        ├── AppointmentBooking.API (Presentation)
-        ├── AppointmentBooking.Application
-            ├── 📂 ServicesAbstraction
-            ├── 📂 Services
-            ├── 📂 Commands
-            ├── 📂 Queries
-        ├── AppointmentBooking.Domain
-            ├── 📂 Models (Contain Main Domain Models)
-            ├── 📂 RepoAbstraction
+        ├── 🗂️ AppointmentBooking.API (Presentation)
+        ├── 🗂️ AppointmentBooking.Application
+            ├── ServicesAbstraction
+            ├── Services
+            ├── Commands
+            ├── Queries
+        ├── 🗂️ AppointmentBooking.Domain
+            ├── Models (Contain Main Domain Models)
+            ├── RepoAbstraction
         ├── AppointmentBooking.Infrastructure
     ├── 📂Module 3: 
     ├── 📂Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
