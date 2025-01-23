@@ -5,7 +5,7 @@ Folder structure
  ```bash
 ├── 📦 Modular Monolith Doctor Start up       
 ├── 📂 Modules                
-    ├── 📦Module 1: DoctorAvailability Module (Layered Architecture)
+    ├── 📦Module 1: DoctorAvailability (Layered Architecture)
     ├── 📦Module 2: Appointment Booking (Clean Architecture)
         ├── 📒 AppointmentBooking.API (Presentation)
         ├── 📒 AppointmentBooking.Application
@@ -16,9 +16,11 @@ Folder structure
         ├── 📒 AppointmentBooking.Domain
             ├── Models (Contain Main Domain Models)
             ├── RepoAbstraction
+            ├── DomainServiceAbstraction
         ├── 📒 AppointmentBooking.Infrastructure
-    ├── 📦 Module 3: 
-    ├── 📦 Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
+            ├── DomainService
+    ├── 📦 Module 3: Appointment Confirmation 
+    ├── 📦 Module 4: Doctor Appointment Management  (Hexagonal Architecture)
         ├── 📒 DoctorAppointmentManagement.API
             ├── Shell
             ├── Core
