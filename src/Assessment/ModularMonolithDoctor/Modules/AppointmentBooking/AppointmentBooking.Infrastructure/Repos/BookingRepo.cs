@@ -1,4 +1,4 @@
-﻿using AppointmentBooking.Domain.Entities;
+﻿using AppointmentBooking.Domain.Models;
 using AppointmentBooking.Domain.RepoAbstraction;
 using AppointmentBooking.Infrastructure.Database;
 using System;

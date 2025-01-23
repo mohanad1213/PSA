@@ -16,9 +16,12 @@ Folder structure
         ├── 📒 AppointmentBooking.Domain
             ├── Models (Contain Main Domain Models)
             ├── RepoAbstraction
-        ├── AppointmentBooking.Infrastructure
+        ├── 📒 AppointmentBooking.Infrastructure
     ├── 📦 Module 3: 
     ├── 📦 Module 4: Doctor Appointment Management Module (Hexagonal Architecture)
+        ├── 📒 DoctorAppointmentManagement.API
+            ├── Shell
+            ├── Core
     ├── 📂Shared
         ├── 📦 
         ├── 📦 

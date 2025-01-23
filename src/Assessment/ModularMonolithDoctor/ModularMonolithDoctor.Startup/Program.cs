@@ -7,8 +7,6 @@ using Database;
 using DoctorAppointmentManagement.API.Core.Application;
 using DoctorAvailability.Business;
 using DoctorAvailability.Business.Abstraction;
-using DoctorAvailability.Data;
-using DoctorAvailability.Data.Abstraction;
 using Microsoft.EntityFrameworkCore;
 
 namespace ModularMonolithDoctor.Startup
@@ -20,8 +18,8 @@ namespace ModularMonolithDoctor.Startup
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<DocktorDbContext>(options =>
-                options.UseInMemoryDatabase("InMemoryDb"));
+            //builder.Services.AddDbContext<DocktorDbContext>(options =>
+            //    options.UseInMemoryDatabase("InMemoryDb"));
 
             builder.Services.AddDbContext<AppointmentBookingDbContext>(options =>
                 options.UseInMemoryDatabase("AppointmentBookingDb"));
@@ -34,8 +32,8 @@ namespace ModularMonolithDoctor.Startup
             #region Module 1: Doctor Availability Module
             builder.Services.AddControllers().AddApplicationPart(typeof(DoctorAvailability.API.AssemblyReference).Assembly);
 
-            builder.Services.AddScoped<ITimeSlotRepo, TimeSlotRepo>();
-            builder.Services.AddScoped<IDoctorAvailabilityBusiness, DoctorAvailabilityBusiness>();
+            //builder.Services.AddScoped<ITimeSlotRepo, TimeSlotRepo>();
+            //builder.Services.AddScoped<IDoctorAvailabilityBusiness, DoctorAvailabilityBusiness>();
             #endregion
 
             #region Module 2: AppointmentBooking Module

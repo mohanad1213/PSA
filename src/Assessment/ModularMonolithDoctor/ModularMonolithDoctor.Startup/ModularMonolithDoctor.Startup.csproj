@@ -22,7 +22,6 @@
     <ProjectReference Include="..\Modules\DoctorAppointmentManagement\DoctorAppointmentManagement.API\DoctorAppointmentManagement.API.csproj" />
     <ProjectReference Include="..\Modules\DoctorAvailability\DoctorAvailability.API\DoctorAvailability.API.csproj" />
     <ProjectReference Include="..\Modules\DoctorAvailability\DoctorAvailability.Business\DoctorAvailability.Business.csproj" />
-    <ProjectReference Include="..\Modules\Shared\Database\Database.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,9 +15,5 @@
 	  <Folder Include="Core\NewFolder\" />
 	  <Folder Include="Core\OutPorts\" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\..\Shared\Database\Database.csproj" />
-	</ItemGroup>
 	
 </Project>

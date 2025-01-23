@@ -12,7 +12,6 @@ namespace AppointmentBooking.API.Controllers
         private readonly ILogger<AppointmentBookingController> _logger;
         private readonly IAppointmentBookingService _appointmentBookingService;
 
-        #region Constructor
         public AppointmentBookingController(
             IAppointmentBookingService appointmentBookingService,
             ILogger<AppointmentBookingController> logger
