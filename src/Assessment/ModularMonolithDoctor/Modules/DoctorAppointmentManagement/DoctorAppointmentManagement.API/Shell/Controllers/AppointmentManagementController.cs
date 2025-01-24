@@ -1,4 +1,5 @@
 using DoctorAppointmentManagement.API.Core.Application.Abstractions;
+using DoctorAppointmentManagement.API.Core.Ports.OutputPorts.ServiceAbstractions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

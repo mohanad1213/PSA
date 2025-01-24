@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorAppointmentManagement.API.Core.Application.Abstractions
+namespace DoctorAppointmentManagement.API.Core.Ports.InputPorts.RepoAbstraction
 {
-    public interface IAppointmentService
+    public interface IRepo
     {
     }
 }

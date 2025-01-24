@@ -1,4 +1,4 @@
-﻿using DoctorAppointmentManagement.API.Core.InputPorts.RepoAbstraction;
+﻿using DoctorAppointmentManagement.API.Core.Ports.InputPorts.RepoAbstraction;
 
 namespace DoctorAppointmentManagement.API.Shell.Adapters.DataAccess.Repo
 {

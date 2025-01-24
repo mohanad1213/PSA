@@ -23,7 +23,16 @@ Folder structure
     ├── 📦 Module 4: Doctor Appointment Management  (Hexagonal Architecture)
         ├── 📒 DoctorAppointmentManagement.API
             ├── Shell
+                ├── Ports
+                    ├── ⬇️ InputPorts
+                    ├── ↘️ OutputPorts
+                ├── Services
             ├── Core
+                ├── Adapters (Repo Implemtations)
+                ├── Controller (Presentation)
+                ├── ➡️ Requests
+                ├── ⬅️ Responce
+
     ├── 📂Shared
         ├── 📦 
         ├── 📦 
