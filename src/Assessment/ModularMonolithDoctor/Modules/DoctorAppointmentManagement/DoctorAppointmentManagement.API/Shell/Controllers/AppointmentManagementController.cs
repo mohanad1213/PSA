@@ -1,5 +1,6 @@
 using DoctorAppointmentManagement.API.Core.Application.Abstractions;
 using DoctorAppointmentManagement.API.Core.Ports.OutputPorts.ServiceAbstractions;
+using DoctorAppointmentManagement.API.Shell.Requests;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -25,9 +26,11 @@ namespace DoctorAppointmentManagement.API.Shell.Controllers
             _logger = logger;
         }
 
-        [HttpGet()]
-        public IActionResult Get()
+        [HttpGet("{NumRequest}")]
+        public IActionResult Get(int NumRequest)
         {
+            Core.Commands.Command command = new Core.Commands.Command();
+            var result = _appointmentService.Do(command);
             return Ok();
         }
     }

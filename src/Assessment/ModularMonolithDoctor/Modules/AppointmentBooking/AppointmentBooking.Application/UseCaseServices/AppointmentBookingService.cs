@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppointmentBooking.Application.Services
+namespace AppointmentBooking.Application.UseCaseServices
 {
     public class AppointmentBookingService : IAppointmentBookingService
     {
@@ -18,6 +18,7 @@ namespace AppointmentBooking.Application.Services
             _bookingRepo = bookingRepo;
         }
 
+        // Use Case 
         public List<BookingModel> MyBooking()
         {
             return _bookingRepo.GetBooking();

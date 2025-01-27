@@ -1,4 +1,4 @@
-using AppointmentBooking.Application.Services;
+using AppointmentBooking.Application.UseCaseServices;
 using AppointmentBooking.Application.ServicesAbstraction;
 using AppointmentBooking.Domain.RepoAbstraction;
 using AppointmentBooking.Infrastructure.Database;

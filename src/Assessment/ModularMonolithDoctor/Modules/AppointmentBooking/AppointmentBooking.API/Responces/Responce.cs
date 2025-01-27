@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoctorAppointmentManagement.API.Core.Application.Abstractions
+namespace AppointmentBooking.API.Responces
 {
-    public interface ISlotService
+    internal class Responce
     {
-      
     }
 }
