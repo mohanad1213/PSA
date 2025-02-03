@@ -10,6 +10,6 @@ namespace AppointmentBooking.Application.ServicesAbstraction
 {
     public interface IAppointmentBookingService
     {
-        public List<BookingModel> MyBooking();
+        public void MyBooking();
     }
 }

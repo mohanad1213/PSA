@@ -25,6 +25,7 @@ namespace AppointmentBooking.API.Controllers
         [HttpPost()]
         public IActionResult Get()
         {
+            _appointmentBookingService.MyBooking();
             return Ok();
         }
     }

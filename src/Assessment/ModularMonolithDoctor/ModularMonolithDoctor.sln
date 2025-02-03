@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentBooking.API", "Modules\AppointmentBooking\AppointmentBooking.API\AppointmentBooking.API.csproj", "{727E545B-1DB8-4908-A6F5-180D912BAE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentConfirmation.API", "Modules\AppointmentConfirmation\AppointmentConfirmation.API\AppointmentConfirmation.API.csproj", "{481A7202-4106-4421-98C9-97D1F9891597}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentConfirmationService", "Modules\AppointmentConfirmation\AppointmentConfirmation.API\AppointmentConfirmationService.csproj", "{481A7202-4106-4421-98C9-97D1F9891597}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6628687B-4906-42C6-B817-1B9ADDBB39FC}"
 EndProject
@@ -33,6 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F944DF0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D6C8B81-23A9-42DF-9C68-1BC9736D0158}"
 	ProjectSection(SolutionItems) = preProject
+		arch.excalidraw = arch.excalidraw
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -43,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentBooking.Infrastructure", "Modules\AppointmentBooking\AppointmentBooking.Infrastructure\AppointmentBooking.Infrastructure.csproj", "{3DB47AD3-C36B-4DF4-AFD7-65B505F1CBDD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "In-MemoryDB", "Modules\Shared\In-MemoryDB\In-MemoryDB.csproj", "{D3B2E258-E493-4029-8BA2-3D1642FE1C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentConfirmationService.Shared", "Modules\AppointmentConfirmation\AppointmentConfirmationService.Shared\AppointmentConfirmationService.Shared.csproj", "{BBB64B7B-F263-4633-8058-0E2B4853E5DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +97,10 @@ Global
 		{D3B2E258-E493-4029-8BA2-3D1642FE1C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B2E258-E493-4029-8BA2-3D1642FE1C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B2E258-E493-4029-8BA2-3D1642FE1C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB64B7B-F263-4633-8058-0E2B4853E5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB64B7B-F263-4633-8058-0E2B4853E5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB64B7B-F263-4633-8058-0E2B4853E5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB64B7B-F263-4633-8058-0E2B4853E5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,5 +121,6 @@ Global
 		{EC6B03A0-BE1F-47B0-B264-3E4FD492E098} = {34073943-CCFE-4F81-9AD3-D06612802B52}
 		{3DB47AD3-C36B-4DF4-AFD7-65B505F1CBDD} = {34073943-CCFE-4F81-9AD3-D06612802B52}
 		{D3B2E258-E493-4029-8BA2-3D1642FE1C88} = {6628687B-4906-42C6-B817-1B9ADDBB39FC}
+		{BBB64B7B-F263-4633-8058-0E2B4853E5DA} = {873C9D3B-DF45-4127-89D9-3B636F451375}
 	EndGlobalSection
 EndGlobal

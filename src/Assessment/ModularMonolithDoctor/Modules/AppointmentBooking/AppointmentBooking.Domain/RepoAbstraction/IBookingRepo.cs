@@ -9,6 +9,6 @@ namespace AppointmentBooking.Domain.RepoAbstraction
 {
     public interface IBookingRepo
     {
-        List<BookingModel> GetBooking();
+        void GetBooking();
     }
 }

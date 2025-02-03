@@ -14,8 +14,11 @@
 	  <Folder Include="Core\DomainEntities\" />
 	  <Folder Include="Core\Exceptions\" />
 	  <Folder Include="Shell\Mappers\" />
-	  <Folder Include="Shell\Database\" />
 	  <Folder Include="Shell\Responce\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\In-MemoryDB\In-MemoryDB.csproj" />
 	</ItemGroup>
 	
 </Project>

@@ -42,13 +42,13 @@ namespace ModularMonolithDoctor.Startup
             #endregion
 
             #region Module 2: AppointmentBooking Module
-            //builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentBooking.API.AssemblyReference).Assembly);
+            builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentBooking.API.AssemblyReference).Assembly);
 
-            //builder.Services.AddScoped<IBookingRepo, BookingRepo>();
-            //builder.Services.AddScoped<IAppointmentBookingService, AppointmentBookingService>();
+            builder.Services.AddScoped<IBookingRepo, BookingRepo>();
+            builder.Services.AddScoped<IAppointmentBookingService, AppointmentBookingService>();
             #endregion
 
-            builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentConfirmation.API.AssemblyReference).Assembly);
+            //builder.Services.AddControllers().AddApplicationPart(typeof(AppointmentConfirmation.API.AssemblyReference).Assembly);
 
             #region Module 4: Doctor Availability Module
             //builder.Services.AddControllers().AddApplicationPart(typeof(DoctorAppointmentManagement.API.AssemblyReference).Assembly);

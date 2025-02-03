@@ -26,7 +26,8 @@ namespace AppointmentBooking.API.Controllers
         [HttpGet()]
         public IActionResult Get()
         {
-            return Ok(this._appointmentBookingService.MyBooking());
+            this._appointmentBookingService.MyBooking();
+            return Ok();
         }
         #endregion
     }

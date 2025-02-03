@@ -1,6 +1,7 @@
 ﻿using AppointmentBooking.Application.ServicesAbstraction;
 using AppointmentBooking.Domain.Models;
 using AppointmentBooking.Domain.RepoAbstraction;
+using AppointmentConfirmationService.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,16 @@ namespace AppointmentBooking.Application.UseCaseServices
         }
 
         // Use Case 
-        public List<BookingModel> MyBooking()
+        public void MyBooking()
         {
-            return _bookingRepo.GetBooking();
+            new AppointmentConfirmationServiceGateWay().NotificationGateway(new NotificationMessage()
+            {
+                PatientName = "Ali",
+                DoctorName = "Mohanad",
+                Time = DateTime.Now
+
+            });
+           // return _bookingRepo.GetBooking();
         }
     }
 }
