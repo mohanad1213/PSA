@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database.Entities
+namespace DoctorAvailability.Data.Dtos
 {
-    public class TimeSlotEntities
+    public class TimeSlotDto
     {
-        [Key]
         public Guid id { get; set; }
         public DateTime time { get; set; }
         public Guid doctorId { get; set; }

@@ -5,7 +5,7 @@ Folder structure
  ```bash
 ├── 📦 Modular Monolith Doctor Start up       
 ├── 📂 Modules                
-    ├── 📦Module 1: DoctorAvailability (Layered Architecture)
+    ├── 📦Module 1: Doctor Availability (Layered Architecture)
     ├── 📦Module 2: Appointment Booking (Clean Architecture)
         ├── 📒 AppointmentBooking.API (Presentation)
         ├── 📒 AppointmentBooking.Application
@@ -34,8 +34,8 @@ Folder structure
                 ├── ⬅️ Responce
 
     ├── 📂Shared
-        ├── 📦 
-        ├── 📦 
+        ├── ⛃ In-Memory Database 1 (For Module 1: Doctor Availability)
+        ├── ⛃ In-Memory Database 2 
     └── README.md
 ``` 
 

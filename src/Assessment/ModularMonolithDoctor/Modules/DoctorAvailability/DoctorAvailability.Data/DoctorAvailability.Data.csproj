@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\In-MemoryDB\In-MemoryDB.csproj" />
+  </ItemGroup>
+
 </Project>

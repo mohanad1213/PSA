@@ -1,4 +1,4 @@
-﻿using DoctorAvailability.Business.Dtos;
+﻿using DoctorAvailability.Data.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +10,7 @@ namespace DoctorAvailability.Business.Abstraction
     public interface IDoctorAvailabilityBusiness
     {
         public List<TimeSlotDto> GetMyTimeSlots();
+
+        public List<TimeSlotDto> AddNewTimeSlot(AddTimeSlotDto addTimeSlotDto);
     }
 }
