@@ -6,6 +6,9 @@ Folder structure
 ├── 📦 Modular Monolith Doctor Start up       
 ├── 📂 Modules                
     ├── 📦Module 1: Doctor Availability (Layered Architecture)
+        ├── 📒 DoctorAvailability.API (Presentation Layer)
+        ├── 📒 DoctorAvailability.Business (Business Layer)
+        ├── 📒 DoctorAvailability.Data (Data Layer)
     ├── 📦Module 2: Appointment Booking (Clean Architecture)
         ├── 📒 AppointmentBooking.API (Presentation)
         ├── 📒 AppointmentBooking.Application
