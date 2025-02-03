@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace DoctorAppointmentManagement.API.Shell.Requests
 {
-    public class NumRequest
+    public class TimeSlotChangeStatusRequest
     {
-        public int Num { get; set; }
+        public Guid id { get; set; }
+
+        
+    }
+
+    enum TimeSlotStatus
+    {
+
     }
 }

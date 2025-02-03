@@ -26,8 +26,17 @@ namespace DoctorAppointmentManagement.API.Shell.Controllers
             _logger = logger;
         }
 
-        [HttpGet("{NumRequest}")]
+        [HttpGet()]
         public IActionResult Get(int NumRequest)
+        {
+            Core.Commands.Command command = new Core.Commands.Command();
+            var result = _appointmentService.Do(command);
+            return Ok();
+        }
+
+
+        [HttpPost()]
+        public IActionResult Post(int NumRequest)
         {
             Core.Commands.Command command = new Core.Commands.Command();
             var result = _appointmentService.Do(command);
